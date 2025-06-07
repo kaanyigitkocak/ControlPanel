@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export for Render deployment
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  },
+  basePath: '',
+  assetPrefix: ''
 }
 
 module.exports = nextConfig 
